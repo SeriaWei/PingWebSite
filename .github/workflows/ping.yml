@@ -1,0 +1,23 @@
+name: Ping Web Site
+
+on:
+  push:
+    branches: [ master ]
+  schedule: 
+    - cron: '*/10 * * * *' #every 10 minutes
+jobs:
+  ping:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.100
+    - name: Install dependencies
+      run: dotnet tool restore
+    - name: Run
+      env:
+      run: dotnet tool run Web.Ping --host http://www.zkea.net

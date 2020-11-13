@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "isRoot": true,
+  "tools": {
+    "web.ping": {
+      "version": "0.0.1",
+      "commands": [
+        "Web.Ping"
+      ]
+    }
+  }
+}
