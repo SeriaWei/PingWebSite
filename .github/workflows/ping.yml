@@ -19,5 +19,4 @@ jobs:
     - name: Install dependencies
       run: dotnet tool restore
     - name: Run
-      env:
       run: dotnet tool run Web.Ping --host http://www.zkea.net
