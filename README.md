@@ -4,7 +4,7 @@
 
 ```
 ...
-run: Web.Ping --host http://www.zkea.net
+run: dotnet tool run Web.Ping --host http://www.zkea.net
 ```
 
 ### Ping
