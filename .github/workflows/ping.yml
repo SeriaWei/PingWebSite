@@ -17,6 +17,6 @@ jobs:
       with:
         dotnet-version: 5.0.100
     - name: Install dependencies
-      run: dotnet tool restore
+      run: dotnet tool install Web.Ping -g
     - name: Run
-      run: dotnet tool run Web.Ping --host http://www.zkea.net
+      run: Web.Ping --host http://www.zkea.net
