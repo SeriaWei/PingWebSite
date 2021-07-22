@@ -12,3 +12,5 @@ run: dotnet tool run Web.Ping --host http://www.zkea.net
 ### Ping
 
 https://github.com/SeriaWei/Ping
+
+http://www.zkea.net/codesnippet/detail/ping-website.html
