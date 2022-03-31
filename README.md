@@ -4,7 +4,7 @@
 
 ```
 ...
-run: dotnet tool run Web.Ping --host http://www.zkea.net
+run: Web.Ping --host http://www.zkea.net
 ```
 
 **注意：** Fork后Actions默认是关闭的，需要手动开启。
